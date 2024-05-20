@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stèphanie Tabosa | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/profile-pic.png" type="image/png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Stèphanie Tabosa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Fale comigo</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Stèphanie Tabosa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Fale comigo</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Stèphanie Taboosa imagem de perfil"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, Eu sou</p>
+        <h1 class="title">Stèphanie Tabosa</h1>
+        <p class="section__text__p2">Mobile Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1EYRhGFvJvzgpNrSs89qSaL7Wo5_WADmc/view?usp=sharing')"
+          >
+            Visualizar CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Fale comigo
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu perfil do LinkedIn"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/stephanie-tabosa/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Meu perfil do Github"
+            class="icon"
+            onclick="window.open('https://github.com/StephanieTabosa')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Um pouco mais</p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Imagem perfil sobre mim"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>~2 anos <br />Mobile Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>
+                Graduanda<br />Sistemas para Internet com ênfase em Frontend
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Desenvolvedora Mobile Flutter/Dart | Aprendendo e Aprofundando em
+              iOS/Swift/UIKit. <br />Com uma sólida formação em UX/UI e com
+              pós-graduação.
+            </p>
+            <br />
+            <p>
+              Durante minha carreira, tive a oportunidade de trabalhar em uma
+              variedade de projetos, incluindo o desenvolvimento de módulos
+              Flutter em aplicativos nativos Android e iOS, bem como experiência
+              em Flutter Web. Sempre priorizo a criação de soluções de alta
+              qualidade que atendam às necessidades do usuário. Além das minhas
+              habilidades técnicas, também possuo uma série de soft skills que
+              acredito serem cruciais para o meu papel.
+            </p>
+            <br />
+            <p>
+              Isso inclui a capacidade de realizar revisões de código eficazes,
+              manter um código limpo e comunicar-me efetivamente com os membros
+              da equipe. Estou sempre buscando maneiras de expandir meu conjunto
+              de habilidades e ficar atualizada sobre as últimas tendências e
+              tecnologias em desenvolvimento mobile.
+            </p>
+            <br />
+            <p>
+              Atualmente, estou aprendendo nativo iOS/Swift/UIKit, arquitetura
+              MVVM, para enriquecer ainda mais meu repertório no desenvolvimento
+              mobile. Faz parte da minha rotina como desenvolvedora de software:
+              Flutter, Dart, Modular, Bloc/Cubit, Firebase, TDD, APIs RESTful,
+              Clean Architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Mais sobre minha</p>
+      <h1 class="title">Experiência</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Flutter Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dart</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bloc/Cubit</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Modular</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dio</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">iOS Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Swift</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UIKit</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MVVM</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Coordinator</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Os mais recentes</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Projeto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cinetopia - iOS</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/StephanieTabosa/cinetopia-ios')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Delivery BackOffice - Flutter
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/StephanieTabosa/delivery_backoffice')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Coffee shop - Flutter
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/StephanieTabosa/coffee-ui-flutter')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entre em contato</p>
+      <h1 class="title">Fale comigo</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:stabosastephanie@gmail.com"
+              >stabosastephanie@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/stephanie-tabosa/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Fale comigo</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &#169; 2024 Stèphanie Tabosa. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
