@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="icon" href="./assets/profile-pic.png" type="image/png" />
   </head>
+
   <body>
+    <!-- NAVIGATION -->
     <nav id="desktop-nav">
       <div class="logo">Stèphanie Tabosa</div>
       <div>
@@ -17,10 +19,11 @@
           <li><a href="#about">Sobre mim</a></li>
           <li><a href="#experience">Experiência</a></li>
           <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Fale comigo</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Stèphanie Tabosa</div>
       <div class="hamburger-menu">
@@ -33,21 +36,24 @@
           <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Fale comigo</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- HERO -->
     <section id="profile">
       <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic.png"
-          alt="Stèphanie Taboosa imagem de perfil"
-        />
+        <img src="./assets/profile-pic.png" alt="Foto de perfil de Stèphanie Tabosa" />
       </div>
+
       <div class="section__text">
-        <p class="section__text__p1">Olá, Eu sou</p>
+        <p class="section__text__p1">Olá, eu sou</p>
         <h1 class="title">Stèphanie Tabosa</h1>
-        <p class="section__text__p2">Mobile Developer</p>
+        <p class="section__text__p2">
+          Mobile Engineer | iOS (Swift) & Flutter | Integração com APIs Nativas
+        </p>
+
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -60,334 +66,351 @@
             Fale comigo
           </button>
         </div>
+
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="Meu perfil do LinkedIn"
+            alt="Perfil LinkedIn"
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/stephanie-tabosa/')"
           />
           <img
             src="./assets/github.png"
-            alt="Meu perfil do Github"
+            alt="Perfil GitHub"
             class="icon"
             onclick="window.open('https://github.com/StephanieTabosa')"
           />
         </div>
       </div>
     </section>
+
+    <!-- ABOUT -->
     <section id="about">
       <p class="section__text__p1">Um pouco mais</p>
       <h1 class="title">Sobre mim</h1>
+
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Imagem perfil sobre mim"
-            class="about-pic"
-          />
+          <img src="./assets/about-pic.png" alt="Imagem sobre mim" class="about-pic" />
         </div>
+
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/experience.png" alt="Ícone experiência" class="icon" />
               <h3>Experiência</h3>
-              <p>~3 anos <br />Mobile Development</p>
+              <p>3+ anos em desenvolvimento mobile multiplataforma</p>
             </div>
+
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" alt="Ícone educação" class="icon" />
               <h3>Educação</h3>
-              <p>Graduada<br />Sistemas para Internet com ênfase em Frontend</p>
+              <p>
+                Graduada em Sistemas para Internet<br />
+                com ênfase em Frontend
+              </p>
             </div>
           </div>
+
           <div class="text-container">
             <p>
-              Desenvolvedora Mobile iOS/Swift/UIKit & Flutter/Dart. <br />Com
-              uma sólida formação em UX/UI e com pós-graduação.
+              Mobile Engineer com experiência em iOS (Swift/UIKit) e Flutter,
+              atuando no desenvolvimento de aplicações escaláveis, modulares e
+              com foco em qualidade de código.
             </p>
+
             <br />
+
             <p>
-              Durante minha carreira, tive a oportunidade de trabalhar em uma
-              variedade de projetos, incluindo o desenvolvimento de módulos
-              Flutter em aplicativos nativos Android e iOS, nativo iOS com
-              Swift, bem como experiência em Flutter Web. Sempre priorizo a
-              criação de soluções de alta qualidade que atendam às necessidades
-              do usuário. Além das minhas habilidades técnicas, também possuo
-              uma série de soft skills que são cruciais para o meu papel no dia
-              a dia.
+              Experiência em arquiteturas como MVVM-C e Clean Architecture,
+              modularização de projetos e integração de módulos Flutter em
+              aplicações nativas iOS e Android.
+            </p>
+
+            <br />
+
+            <p>
+              Implementação de funcionalidades utilizando APIs nativas,
+              incluindo integração via Method Channels e comunicação local
+              utilizando Bluetooth Low Energy (BLE), com tratamento de permissões,
+              estados de conexão e ciclo de vida da aplicação.
             </p>
           </div>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Seta para experiência"
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- EXPERIENCE -->
     <section id="experience">
-      <p class="section__text__p1">Mais sobre minha</p>
+      <p class="section__text__p1">Conhecimentos técnicos</p>
       <h1 class="title">Experiência</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
+
+          <!-- iOS -->
           <div class="details-container">
             <h2 class="experience-sub-title">iOS Development</h2>
             <div class="article-container">
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>Swift</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>UIKit</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>MVVM-C</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>ViewCode</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>CocoaPods</h3>
-                  <p>Básico</p>
+                  <p>Intermediário</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>UserDefaults</h3>
-                  <p>Básico</p>
+                  <p>Intermediário</p>
                 </div>
               </article>
+
             </div>
           </div>
+
+          <!-- Flutter -->
           <div class="details-container">
             <h2 class="experience-sub-title">Flutter Development</h2>
             <div class="article-container">
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>Flutter</h3>
                   <p>Avançado</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>Bloc/Cubit</h3>
-                  <p>Intermediário</p>
+                  <h3>BLoC / Cubit</h3>
+                  <p>Avançado</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>Modular</h3>
-                  <p>Intermediário</p>
+                  <p>Avançado</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>Dio</h3>
                   <p>Avançado</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
                   <h3>Firebase</h3>
-                  <p>Intermediário</p>
+                  <p>Avançado</p>
                 </div>
               </article>
+
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <img src="./assets/checkmark.png" class="icon" />
                 <div>
-                  <h3>Clean Arch</h3>
+                  <h3>Clean Architecture</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" class="icon" />
+                <div>
+                  <h3>Method Channels</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
+
+              <article>
+                <img src="./assets/checkmark.png" class="icon" />
+                <div>
+                  <h3>Bluetooth Low Energy (BLE)</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+
             </div>
           </div>
+
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Seta para projetos"
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- PROJECTS -->
     <section id="projects">
-      <p class="section__text__p1">Os mais recentes</p>
+      <p class="section__text__p1">Projetos selecionados</p>
       <h1 class="title">Projetos</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
+
+          <!-- Projeto 1 -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Projeto 1"
-                class="project-img"
-              />
+              <img src="./assets/project-1.png" alt="Cinetopia iOS" class="project-img" />
             </div>
+
             <h2 class="experience-sub-title project-title">Cinetopia - iOS</h2>
+
+            <p class="project-description">
+              Aplicação desenvolvida em Swift utilizando UIKit,
+              com foco em organização de camadas e boas práticas de arquitetura.
+            </p>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://github.com/StephanieTabosa/cinetopia-ios')"
               >
-                Github
+                GitHub
               </button>
             </div>
           </div>
+
+          <!-- Projeto 2 -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/project-2.png" alt="iPlay Flutter" class="project-img" />
             </div>
+
             <h2 class="experience-sub-title project-title">iPlay - Flutter</h2>
+
+            <p class="project-description">
+              Aplicação Flutter utilizando Clean Architecture,
+              gerenciamento de estado com BLoC e integração com APIs REST.
+            </p>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://github.com/StephanieTabosa/iplay_flutter')"
               >
-                Github
+                GitHub
               </button>
             </div>
           </div>
+
+          <!-- Projeto 3 -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/project-1.png" alt="Cinetopia Flutter" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">
-              Cinetopia - Flutter
-            </h2>
+
+            <h2 class="experience-sub-title project-title">Cinetopia - Flutter</h2>
+
+            <p class="project-description">
+              Projeto Flutter com arquitetura modular e integração com APIs,
+              explorando organização de camadas e escalabilidade.
+            </p>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://github.com/StephanieTabosa/cinetopia-flutter')"
               >
-                Github
+                GitHub
               </button>
             </div>
           </div>
+
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
-        alt="Arrow icon"
+        alt="Seta para contato"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <!-- CONTACT -->
     <section id="contact">
       <p class="section__text__p1">Entre em contato</p>
-      <h1 class="title">Fale comigo</h1>
+      <h1 class="title">Contato</h1>
+
       <div class="contact-info-upper-container">
+
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/email.png" alt="Ícone email" class="icon contact-icon email-icon" />
           <p>
-            <a href="mailto:stabosastephanie@gmail.com"
-              >stabosastephanie@gmail.com</a
-            >
+            <a href="mailto:stabosastephanie@gmail.com">
+              stabosastephanie@gmail.com
+            </a>
           </p>
         </div>
+
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <img src="./assets/linkedin.png" alt="Ícone LinkedIn" class="icon contact-icon" />
           <p>
-            <a href="https://www.linkedin.com/in/stephanie-tabosa/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/stephanie-tabosa/">
+              LinkedIn
+            </a>
           </p>
         </div>
+
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -395,14 +418,16 @@
             <li><a href="#about">Sobre mim</a></li>
             <li><a href="#experience">Experiência</a></li>
             <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Fale comigo</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
       </nav>
+
       <p>
-        Copyright &#169; 2025 Stèphanie Tabosa. Todos os direitos reservados.
+        © 2026 Stèphanie Tabosa. Todos os direitos reservados.
       </p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
